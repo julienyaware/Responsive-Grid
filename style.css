@@ -1,6 +1,6 @@
 :root {
-    --primary: #ddd;
-    --dark: #172044;
+    --themeColor: #ddd;
+    --darkColor: #172044;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104,104,104, 0.8);
 
@@ -8,7 +8,7 @@
 html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--dark);
+    color: var(--darkColor);
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 .btn {
-    background: var(--dark);
+    background: var(--darkColor);
     color: var(--light);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
@@ -45,12 +45,12 @@ img {
 }
 
 .main-nav a{
-    background: var(--primary);
+    background: var(--themeColor);
     display: block;
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;
-    color: var(--dark);
+    color: var(--darkColor);
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
@@ -58,7 +58,7 @@ img {
 }
 
 .main-nav a:hover{
-    background: var(--dark);
+    background: var(--darkColor);
     color: var(--light);
 }
 
@@ -67,14 +67,14 @@ img {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
-    'showcase showcase top-box-a'
-    'showcase showcase top-box-b';
+    'work work top-box-a'
+    'work work top-box-b';
 }
 
-.showcase{
-    grid-area: showcase;
+.work{
+    grid-area: work;
     min-height: 400px;
-    background: url(images/showcase.jpg);
+    background: url(images/workImg.jpg);
     background-size: cover;
     background-position: center;
     padding: 3rem;
@@ -86,20 +86,20 @@ img {
     
 }
 
-.showcase h1{
+.work h1{
     font-size: 4rem;
     color: var(--light);
     margin-bottom: 0;
 }
 
-.showcase p{
+.work p{
     font-size: 1.3rem;
     margin-top: 0;
     color: var(--light);
 }
 
 .top-box{
-    background: var(--primary);
+    background: var(--themeColor);
     display: grid;
     align-items: center;
     box-shadow: var(--shadow);
@@ -124,14 +124,14 @@ img {
 }
 
 .box{
-    background: var(--primary);
+    background: var(--themeColor);
     text-align: center;
     box-shadow: var(--shadow);
     padding: 1.5rem 2rem;
 }
 
 .info {
-    background: var(--primary);
+    background: var(--themeColor);
     box-shadow: var(--shadow);
     display: grid;
     grid-gap: 30px;
@@ -141,7 +141,7 @@ img {
 
 .footer{
     margin-top: 2rem;
-    background: var(--dark);
+    background: var(--darkColor);
     color: var(--light);
     padding: 1rem;
     text-align: center;
@@ -153,11 +153,11 @@ img {
 @media(max-width: 700px) {
     .main-container {
         grid-template-areas: 
-        'showcase showcase'
+        'work work'
         'top-box-a top-box-b';
     }
 
-    .showcase h1{
+    .work h1{
         font-size: 2.5rem; 
     }
 
@@ -180,7 +180,7 @@ img {
 @media(max-width: 500px) {
     .main-container {
         grid-template-areas: 
-        'showcase'
+        'work'
         'top-box-a'
         'top-box-b';
     }
