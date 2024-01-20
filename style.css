@@ -117,10 +117,6 @@ img {
     grid-area: top-box-b;
 }
 
-.top-box .price{
-    font-size: 2.5rem;
-}
-
 .boxes{
     display: grid;
     grid-gap: 20px;
@@ -143,12 +139,6 @@ img {
     padding: 3rem;
 }
 
-.portfolio{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-}
-
 .footer{
     margin-top: 2rem;
     background: var(--dark);
@@ -158,11 +148,6 @@ img {
     
 }
 
-.portfolio img{
-    width: 100%;
-    box-shadow: var(--shadow);
-
-}
 /* Media */
 
 @media(max-width: 700px) {
