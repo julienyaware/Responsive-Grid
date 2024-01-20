@@ -1,6 +1,6 @@
 :root {
     --primary: #ddd;
-    --dark: #333;
+    --dark: #172044;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104,104,104, 0.8);
 
@@ -63,7 +63,7 @@ img {
 }
 
 /* Top container */
-.top-container {
+.main-container {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
@@ -166,7 +166,7 @@ img {
 /* Media */
 
 @media(max-width: 700px) {
-    .top-container {
+    .main-container {
         grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b';
@@ -193,7 +193,7 @@ img {
 }
 
 @media(max-width: 500px) {
-    .top-container {
+    .main-container {
         grid-template-areas: 
         'showcase'
         'top-box-a'
